@@ -170,7 +170,7 @@ a:hover {
         <h2 class="readme-header">5. Name your tags</h2>
         <ul>
           <li>Name your header and footer with <code>id</code> like <code>&lt;div id="header"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
-          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code> and <code>&lt;div class="footer"&gt;</code></li>
+          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
           <li>Then add this nice CSS code</li>
         </ul>
 <% code("css") do %>
@@ -226,7 +226,7 @@ a:hover {
       <section class="readme-section">
         <h2 class="readme-header">7. Bootstrap setup</h2>
         <ol>
-          <li>Create a new <code>index.html</code> file with the skeleton below</li>
+          <li>Create a new <code>index.html</code> file with the Bootstrap template below</li>
           <li>Inject your content in the <code>body</code></li>
           <li>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
         </ol>
@@ -257,17 +257,25 @@ a:hover {
 <% end %>
       </section>
       <section class="readme-section">
-        <h2 class="readme-header">7. Bootstrap setup</h2>
+        <h2 class="readme-header">8. Bootstrap grid</h2>
         <ul>
           <li>Inject your 4 cards div in the following responsive grid</li>
         </ul>
 <% code("html") do %>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3"></div>
-    <div class="col-xs-12 col-sm-6 col-md-3"></div>
-    <div class="col-xs-12 col-sm-6 col-md-3"></div>
-    <div class="col-xs-12 col-sm-6 col-md-3"></div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
   </div>
 </div>
 <% end %>
