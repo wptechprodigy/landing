@@ -1,0 +1,18 @@
+// General Style Variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External Frameworks
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Our CSS
+@import "layout/*";
+@import "pages/*";
+@import "components/*";
+@import "vendor/*";
+
+body {
+  color: #4C4C4C;
+}

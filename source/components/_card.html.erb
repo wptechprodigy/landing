@@ -1,0 +1,83 @@
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/background.jpg');">
+  <div class="card-category">Popular</div>
+  <div class="card-description">
+    <h2>Some stuff</h2>
+    <p>Very cool stuff, useful and smart</p>
+  </div>
+  <img class="card-user avatar" src="images/papillard.jpeg">
+  <a class="card-link" href="#" ></a>
+</div>
+
+<% code("html") do %>
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('background.jpg');">
+  <div class="card-category">Popular</div>
+  <div class="card-description">
+    <h2>Some stuff</h2>
+    <p>Very cool stuff, useful and smart</p>
+  </div>
+  <img class="card-user avatar" src="user.jpg">
+  <a class="card-link" href="#" ></a>
+</div>
+<% end %>
+
+<h3 class="readme-header">Combined with Bootstrap grid</h3>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-background.jpeg');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </div>
+        <div class="card-user">
+          <img src="images/papillard.jpeg" class="avatar"/>
+        </div>
+        <a href="#" class="card-link"></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-background.jpeg');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </div>
+        <div class="card-user">
+          <img src="images/papillard.jpeg" class="avatar"/>
+        </div>
+        <a href="#" class="card-link"></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+     <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-background.jpeg');">
+       <div class="card-category">Popular</div>
+       <div class="card-description">
+         <h2>Some stuff</h2>
+         <p>Very cool stuff, useful and smart</p>
+       </div>
+       <div class="card-user">
+         <img src="images/papillard.jpeg" class="avatar"/>
+       </div>
+       <a href="#" class="card-link"></a>
+     </div>
+    </div>
+  </div>
+</div>
+
+<% code("html") do %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+    </div>
+  </div>
+</div>
+<% end %>

@@ -1,0 +1,277 @@
+---
+title: Le Wagon 2-hour landing workshop
+---
+
+<%= partial "components/banner" %>
+
+
+<div class="container-fluid readme">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+
+      <section class="readme-section">
+        <h2 class="readme-header">1. Let's set up</h2>
+        <ol>
+          <li>Start Sublime Text. It will open a new black window.</li>
+          <li>Create a <strong>folder</strong> <code>landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window.</li>
+          <li>
+            In Sublime Text left navigation:
+            <ul>
+              <li>Right click <strong>"New file"</strong></li>
+              <li>Save it as <code>playground.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+              <li>Do the same to create a <code>style.css</code> file</li>
+              <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
+            </ul>
+            </ul>
+          </li>
+          <li>Finally double click on <code>playground.html</code> to open it with Chrome</li>
+        </ol>
+
+        <img src='images/setup.png' width="100%"/>
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">2. Add some HTML content</h2>
+        <ul>
+          <li>
+            To save time, just right-click on the following images and save them in your <code>images</code> folder
+            <ul class="list-inline">
+              <li><img src="images/briefcase.svg" alt=""></li>
+              <li><img src="images/diamond.svg" alt=""></li>
+              <li><img src="images/heart.svg" alt=""></li>
+              <li><img src="images/laptop.svg" alt=""></li>
+            </ul>
+          </li>
+          <li>Then start with this HTML code in <code>playground.html</code></li>
+        </ul>
+<% code("html") do %>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My playground landing</title>
+  </head>
+  <body>
+    <h1>My playground app</h1>
+    <p>This is the important line everyone reads..</p>
+
+    <h2>Fast</h2>
+    <p>A fast app, <strong>very fast</strong> app</p>
+    <img src="images/briefcase.svg" alt="picture description">
+
+    <h2>Simple</h2>
+    <p>A simple app, <strong>very simple</strong> app</p>
+    <img src="images/diamond.svg" alt="picture description">
+
+    <h2>Awesome</h2>
+    <p>An awesome app, <strong>very awesome</strong> app</p>
+    <img src="images/heart.svg" alt="picture description">
+
+    <h2>Beautiful</h2>
+    <p>A beautiful app, <strong>very beautiful</strong> app</p>
+    <img src="images/laptop.svg" alt="picture description">
+
+    <p>This is a playground landing ©Le Wagon</p>
+  </body>
+</html>
+<% end %>
+        <h3>Go further at home</h3>
+        <ul>
+          <li>You can pick your icons on <a href="https://thenounproject.com/" target="_blank">The Noun Project</a> or <a href="https://nucleoapp.com/premium-icons/" target="_blank">NucleoApp</a> (they have a free pack).</li>
+          <li><strong>Tips</strong>: Also stay tuned checking <a href="https://www.producthunt.com/search?q=icons" target="_blank">icon resources on Product Hunt</a></li>
+        </ul>
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">3. CSS for fonts & colors</h2>
+        <p>Link your stylesheet <code>style.css</code> in the <code>head</code> section of your HTML</p>
+
+
+<% code("html") do %>
+<head>
+  <link href='style.css' rel='stylesheet'>
+</head>
+<% end %>
+        <p>Then copy/paste the CSS code below in <code>style.css</code> and <strong>fix it</strong> cause it's ugly</p>
+        <ul>
+          <li>For fonts use <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+          <li>For colors use <a href="http://www.colorzilla.com/chrome/" target="_blank">Colorzilla Chrome plugin</a> to pick colors from other websites</li>
+          <li>You can also find nice colors on <a href="https://coolors.co/" target="_blank">Coolors</a> or <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
+        </ul>
+<% code("css") do %>
+/* style.css */
+body{
+  background: rgb(245,245,245);
+  color: green;
+  font-size: 25px;
+  font-family: Helvetica;
+}
+h1{
+  font-family: Courier;
+  color: red;
+  font-weight: lighter;
+  font-size: 10px;
+}
+h2 {
+  font-family: Courier;
+  color: pink;
+  font-weight: lighter;
+  font-size: 8px;
+}
+a {
+  color: yellow;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+<% end %>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">4. Wrap with <code>div</code></h2>
+        <p>Wrap different sections in different <code>div</code></p>
+
+<% code("html") do %>
+<div>
+  <h1>My playground app</h1>
+  <p>This is the important line everyone reads..</p>
+</div>
+
+<div>
+  <h2>Fast</h2>
+  <p>A fast app, <strong>very fast</strong> app</p>
+  <img src="images/briefcase.svg" alt="picture description">
+</div>
+
+<div>
+  <h2>Simple</h2>
+  <p>A simple app, <strong>very simple</strong> app</p>
+  <img src="images/diamond.svg" alt="picture description">
+</div>
+
+<div>
+  <h2>Awesome</h2>
+  <p>An awesome app, <strong>very awesome</strong> app</p>
+  <img src="images/heart.svg" alt="picture description">
+</div>
+
+<div>
+  <h2>Beautiful</h2>
+  <p>A beautiful app, <strong>very beautiful</strong> app</p>
+  <img src="images/laptop.svg" alt="picture description">
+</div>
+
+<div>
+  <p>This is a playground landing ©Le Wagon</p>
+</div>
+<% end %>
+
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">5. Name your tags</h2>
+        <ul>
+          <li>Name your header and footer with <code>id</code> like <code>&lt;div id="header"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
+          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code> and <code>&lt;div class="footer"&gt;</code></li>
+          <li>Then add this nice CSS code</li>
+        </ul>
+<% code("css") do %>
+#header{
+  text-align: center;
+  background-image: url("https://unsplash.it/1300/600?random");
+  background-size: cover;
+  padding: 150px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.card{
+  padding: 50px;
+  font-weight: lighter;
+}
+
+#footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+}
+<% end %>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">6. Fontawesome</h2>
+        <p>In your <code>head</code>, it's in your <code>head</code>!</p>
+<% code("html") do %>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<% end %>
+        <p>And then in the footer</p>
+<% code("html") do %>
+<ul>
+  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="#"><i class="fa fa-github"></i></a></li>
+</ul>
+<% end %>
+        <p>With a bit of CSS style</p>
+<% code("css") do %>
+#footer a {
+  color: lightgrey;
+  font-size: 15px;
+}
+#footer a:hover {
+  color: white;
+}
+<% end %>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">7. Bootstrap setup</h2>
+        <ol>
+          <li>Create a new <code>index.html</code> file with the skeleton below</li>
+          <li>Inject your content in the <code>body</code></li>
+          <li>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
+        </ol>
+<% code("html") do %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My landing Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <!-- TODO: insert your page content here -->
+
+    <!-- jQuery & Bootstrap javascript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
+<% end %>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">7. Bootstrap setup</h2>
+        <ul>
+          <li>Inject your 4 cards div in the following responsive grid</li>
+        </ul>
+<% code("html") do %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3"></div>
+    <div class="col-xs-12 col-sm-6 col-md-3"></div>
+    <div class="col-xs-12 col-sm-6 col-md-3"></div>
+    <div class="col-xs-12 col-sm-6 col-md-3"></div>
+  </div>
+</div>
+<% end %>
+      </section>
+    </div>
+  </div>
+</div>
